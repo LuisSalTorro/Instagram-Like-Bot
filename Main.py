@@ -1,7 +1,10 @@
-#import LikeAutomation as LA
 from LikeAutomation import LikeAutomation
+import random
 
 bot = LikeAutomation()
-bot.searchBar("memes")
-bot.likePosts(3,5)
-print("Exit Code: 0")
+tags = bot.readFile("tags.txt")
+searchTag = random.randrange(1,len(tags))
+bot.searchBar(tags[searchTag])
+
+print("You liked a total of " + bot.likePosts(50,5) + " posts during this session.")#(likes, seconds)
+

@@ -1,0 +1,7 @@
+Seperate tags with new lines and don't put spaces in them
+memes
+dankmemes
+horror
+creepy
+scary
+filthyfrank
